@@ -34,7 +34,7 @@ publishing {
             pom {
                 name.set("HACBS Test Simple Gradle JDK8")
                 description.set("Test data for HACBS JVM build service (Gradle version)")
-                url.set("https://github.com/dwalluck/hacbs-test-simple-gradle-jdk8")
+                url.set("https://github.com/stuartwdouglas/hacbs-test-simple-gradle-jdk8")
                 properties.set(mapOf(
                     "maven.compiler.source" to "1.8",
                     "maven.compiler.target" to "1.8"
@@ -53,9 +53,9 @@ publishing {
                     }
                 }
                 scm {
-                    connection.set("scm:git:git://github.com/dwalluck/hacbs-test-simple-gradle-jdk8.git")
-                    developerConnection.set("scm:git:ssh://github.com/dwalluck/hacbs-test-simple-gradle-jdk8.git")
-                    url.set("http://github.com/dwalluck/hacbs-test-simple-gradle-jdk8/")
+                    connection.set("scm:git:git://github.com/stuartwdouglas/hacbs-test-simple-gradle-jdk8.git")
+                    developerConnection.set("scm:git:ssh://github.com/stuartwdouglas/hacbs-test-simple-gradle-jdk8.git")
+                    url.set("http://github.com/stuartwdouglas/hacbs-test-simple-gradle-jdk8/")
                 }
             }
         }
