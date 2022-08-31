@@ -31,6 +31,7 @@ publishing {
     publications {
         create<MavenPublication>("mavenJava") {
             from(components["java"])
+            groupId = "org.github.stuartwdouglas.hacbs-test.gradle"
             pom {
                 name.set("HACBS Test Simple Gradle JDK8")
                 description.set("Test data for HACBS JVM build service (Gradle version)")
@@ -67,6 +68,8 @@ nexusPublishing {
         sonatype {
             nexusUrl.set(uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"))
             snapshotRepositoryUrl.set(uri("https://s01.oss.sonatype.org/content/repositories/snapshots"))
+            password.set(System.getenv("NEXUS_PASSWORD"))
+            username.set(System.getenv("NEXUS_USERNAME"))
         }
     }
 }
