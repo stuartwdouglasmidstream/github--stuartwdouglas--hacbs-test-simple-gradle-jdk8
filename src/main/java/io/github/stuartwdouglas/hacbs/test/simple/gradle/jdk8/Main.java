@@ -1,4 +1,4 @@
-package org.github.stuartwdouglas.hacbs.test.simple.gradle.jdk8;
+package io.github.stuartwdouglas.hacbs.test.simple.gradle.jdk8;
 
 import org.gradle.api.JavaVersion;
 
